@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primaryBg: #ffffff;
+  --secondaryBg: #e6edf3;
+  --shadow: #0d1117;
+  --primary: #45818e;
+  --dark: #000000;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--secondaryBg);
+  position: relative;
+}
+
+.resumeContainer {
+  width: 60%;
+  margin: auto;
+  box-shadow: 0 1px 4px var(--shadow);
+  padding: 1rem;
+  background-color: var(--primaryBg);
+}
+
+.resumeContainer .resumeName,
+.resumeContainer .resumeTitle {
+  text-align: center;
+}
+
+.resumeContainer .resumeName,
+.resumeContainer .resumeTitle {
+  margin-bottom: 1rem;
+}
+
+.resumeContainer .resumeName {
+  letter-spacing: 0.2rem;
+}
+
+.resumeContainer .resumeName h1 {
+  font-size: 2.8rem;
+  font-weight: lighter;
+  color: var(--primary);
+}
+
+.resumeContainer .resumeName h1 span {
+  font-weight: bold !important;
+}
+
+.resumeContainer .resumeTitle {
+  padding: 0.5rem;
+  border: 0.04rem solid var(--shadow);
+  border-left: none;
+  border-right: none;
+}
+
+.resumeContainer .resumeContent {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+}
+
+.resumeContainer .resumeContent .leftContainer,
+.resumeContainer .resumeContent .rightContainer {
+  padding: 0.8rem;
+}
+
+.resumeContainer .resumeContent .leftContainer {
+  flex-basis: 40%;
+}
+
+.resumeContainer .resumeContent .rightContainer {
+  flex-basis: 60%;
+  border-left: 0.05rem solid var(--shadow);
+}
+
+.resumeContact,
+.resumeEduction,
+.resumeSkill {
+  margin-bottom: 1rem;
+}
+
+.resumeContainer .resumeContent .resumeContact .heading,
+.resumeContainer .resumeContent .resumeSkill .heading,
+.resumeContainer .resumeContent .resumeEduction .heading,
+.resumeContainer .resumeContent .resumeAbout .heading,
+.resumeContainer .resumeContent .resumeWork .heading {
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.03rem;
+  margin-bottom: 0.5rem;
+}
+
+.resumeContainer .resumeContent .resumeContact ul {
+  list-style: none;
+}
+
+.resumeContainer .resumeContent .resumeContact ul li {
+  margin-bottom: 0.4rem;
+}
+
+.resumeContainer .resumeContent .resumeContact ul li a {
+  color: var(--dark);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.resumeContainer .resumeContent .resumeContact ul li:hover a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.resumeContainer .resumeContent .resumeContact ul li:hover span svg {
+  color: var(--primary);
+}
+
+.resumeContainer .resumeContent .eductionContent .universityName {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.resumeContainer .resumeContent .eductionContent .universityName h4 {
+  cursor: pointer;
+}
+
+.resumeContainer
+  .resumeContent
+  .eductionContent
+  .universityName
+  h4:first-child:hover {
+  color: var(--primary);
+}
+
+.resumeContainer .resumeContent .eductionContent .courseName p,
+.resumeContainer .resumeContent .aboutContent p {
+  margin-bottom: 1rem;
+}
+
+.resumeContainer .resumeContent .aboutContent p {
+  line-height: 1.5;
+}
+
+.resumeContainer .resumeContent .eductionContent .grades p {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.workContent .work .workTitle,
+.workContent .work .designation {
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.workContent .work .workTitle:hover {
+  color: var(--primary);
+}
+
+.workContent .work ul {
+  padding: 1rem;
+}
+
+.workContent .work ul li {
+  padding: 0.3rem;
+}
